@@ -1,6 +1,6 @@
 {
-  "name": "utility-scripts",
-  "version": "1.0.1",
+  "name": "utility-scripts-codepens",
+  "version": "1.0.2",
   "description": "for using some utilities across web demos",
   "main": "index.js",
   "scripts": {
