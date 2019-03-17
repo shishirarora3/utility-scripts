@@ -4,3 +4,18 @@ const snippets = {
         console.log(htmlStr);
     }
 };
+
+console.clear();
+const simple_chart_config = {
+    chart: {
+        container: "#tree-simple"
+    }
+};
+
+const getNode = name => ({
+    text: {
+        name
+    },
+    children: []
+});
+const rootNode = (simple_chart_config.nodeStructure = getNode(`[]`));
