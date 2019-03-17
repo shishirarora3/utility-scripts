@@ -30,7 +30,7 @@ const collectResult = (indices, level) => {
 
 const fn = (arr, rootNode, getNode, collectResult) => {
     const getNodeValue = indecis => indecis.map(i => arr[i]).join("");
-    const rec = (_result = [], el, subTree = rootNode, level = 0) => {
+    const rec = (_result = [], subTree = rootNode, level = 0) => {
         const values = getNodeValue(_result);
         const node = getNode(values);
 
@@ -43,7 +43,7 @@ const fn = (arr, rootNode, getNode, collectResult) => {
                 if (_result.includes(i)) {
                     return;
                 }
-                rec([..._result, i], el, node, level + 1);
+                rec([..._result, i], node, level + 1);
             });
         }
     };
